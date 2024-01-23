@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      div {
+        background-color: chocolate;
+        color: white;
+        padding: 25px;
+        text-align: center;
+        border-radius: 30px;
+      }
+
+      div:hover {
+        background-color: cadetblue;
+      }
+
+      a.highlight:hover {
+        color: green;
+        font-size: 25px;
+      }
+      a.highlight2:hover {
+        color: yellow;
+        font-size: 25px;
+      }
+      a:visited {
+        color: gray;
+      }
+
+      a[target] {
+        background-color: red;
+      }
+      a[target="_blank"] {
+        background-color: burlywood;
+      }
+
+      .inot {
+        background-color: blueviolet;
+        border-radius: 30px;
+      }
+
+      ::marker {
+        color: red;
+        font-size: 25px;
+      }
+
+      .activities::first-line {
+        background-color: yellow;
+      }
+      .activities::before {
+        content: "Foarte important  -";
+        background-color: bisque;
+        color: brown;
+        font-weight: bold;
+      }
+
+      h2::selection {
+        color: aquamarine;
+        background-color: black;
+      }
+      img {
+        width: 90px;
+        height: 120px;
+      }
+      .desen::after {
+        content: "  -Activitate foarte interesanta cu parintii";
+        background-color: bisque;
+        color: brown;
+        font-weight: bold;
+      }
+
+      h2::first-letter {
+        font-size: 200%;
+        color: darkmagenta;
+      }
+
+      i:first-child {
+        color: yellowgreen;
+      }
+
+      input:optional {
+        background-color: indianred;
+      }
+      [class^="top"] {
+        background: rgb(58, 224, 58);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <div>Activitati pentru copii de 3 ani</div>
+    </h1>
+    <p>
+      <a
+        class="highlight"
+        href="https://totuldespremame.ro/copilul-tau/activitate-si-joaca/ce-te-poti-juca-cu-un-copil-de-3-ani"
+        >Alte surse utile pentru activitati</a
+      >
+    </p>
+    <p>
+      <a
+        class="highlight2"
+        href="https://www.galaxyswimandspa.ro/"
+        target="_blank"
+        >Bazin pentru inot Jupiter</a
+      >
+    </p>
+    <a href="http://copiisiactivitati.ro" target="_blank">copiisiactivitati</a>
+
+    <hr />
+    <h2 class="desen">Desen sau pictura</h2>
+    <ul>
+      <li>
+        Puteti desena cateva figuri geometrice simple,cum ar fi patrate,cercuri
+        sau triunghiuri si le puteti cere sa le coloreze
+      </li>
+      <li>
+        O alta medoda,ar fi sa le cumparati o carte de colorat atractiva si sa
+        ii rugati sa completeze imaginile din ea cu culori
+      </li>
+    </ul>
+    <h2>Jocul cu plastilina</h2>
+    <p class="top-text">
+      Plastilina este o activitate populara care incurajeaza creativitatea
+      copiilor
+    </p>
+    <h2>Puzzleuri</h2>
+    <p>
+      Puzzle-urile sunt ușor de găsit, iar rezolvarea lor poate îmbunătăți
+      abilitățile motorii, cognitive și de raționament ale copilului
+      dumneavoastră. La copiii mai mari, poate contribui, de asemenea, la
+      îmbunătățirea capacității lor de concentrar
+      <br />
+      Începeți cu un puzzle mic, care are mai puține piese. Odată ce copilul
+      dumneavoastră îl stăpânește, creșteți încet nivelul de dificultate.
+      Schimbarea puzzle-urilor îl face adesea să gândească diferit și îl ajută
+      la îmbunătățirea abilităților de rezolvare a problemelo
+    </p>
+    <h2>Activitati cu LEGO</h2>
+    <img src="lego.jpg" alt="" />
+    <p>
+      Aceasta activitate le dezvolta foarte mult imaginatia,iar parintii pot
+      ramane chiar impresionati de ce "opere de arta" poat face
+      copilasii.Baiatul meu nu respecta regulile de a construi o jucarie dupa
+      modelul dat,dar lucrul acesta este benefic si insemna ca are o imaginatie
+      bogata si este creativ.
+    </p>
+    <div class="inot">
+      <p class>
+        Un lucru de care ar trebui sa tina cont toti parintii care au copii,
+        indiferent de cati anisori au acestia este urmatorul aspect:
+      </p>
+    </div>
+    <h2 class="activities">INOTUL</h2>
+    <p>
+      Deschiderea unor oportunități noi și interesante pentru copilul tău de a
+      învăța și de a-și dezvolta abilitățile este unul dintre cele mai valoroase
+      cadouri pe care le poți oferi ca părinte. A-ți învăța copilul să înoate
+      cât mai devreme posibil nu este doar vital pentru siguranța lui, ci și
+      pentru a-i promova sănătatea mentală și fizică. Citeşte întreaga ştire:
+    </p>
+    <h2>Beneficiile inotului - de ce sa iti dai copilul la inot</h2>
+    <p>
+      Înotul este o modalitate excelentă pentru ca bebelușul sau copilul tău să
+      exploreze și să se implice în lumea din jurul său.
+    </p>
+
+    <h3>Ajută la <i>dezvoltarea musculară</i></h3>
+    <p>
+      Înotul pentru sugari și copii mici oferă un tip de exerciții mai blânde
+      care implică întregul corp. Rezistența la apă ajută la dezvoltarea forței
+      musculare, precum și la promovarea sănătății cardiovasculare prin
+      întărirea plămânilor, a inimii și a vaselor de sânge.
+    </p>
+    <h3>Dezvolta <i>abilitatile cognitive</i></h3>
+    <p>
+      Un studiu de la Universitatea Griffith din Australia a constatat că copiii
+      care au învățat să înoate de mici au abilități vizuale-motorii mai
+      avansate, cum ar fi decuparea, colorarea și desenarea de linii și forme.
+    </p>
+  </body>
+</html>
